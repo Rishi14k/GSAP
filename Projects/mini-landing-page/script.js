@@ -27,6 +27,7 @@ tl.from(".iconbar img",{
     opacity:0
 })
 }
+pageAnimation()
 
 let tl2 = gsap.timeline({
     scrollTrigger:{
