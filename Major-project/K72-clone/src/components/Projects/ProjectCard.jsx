@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCard = ({image1, image2}) => {
   return (
     <>
-      <div className="bg-red-300 h-full w-1/2 group hover:rounded-4xl overflow-hidden transition-all relative">
+      <div className="h-full w-full lg:w-1/2 group hover:rounded-4xl overflow-hidden transition-all relative">
         <img className="w-full h-full object-cover" src={image1} alt="img" />
 
         <div className="opacity-0 group-hover:opacity-100 transition w-full h-full absolute top-0 left-0 flex items-center justify-center bg-black/20">
@@ -13,7 +13,7 @@ const ProjectCard = ({image1, image2}) => {
         </div>
       </div>
 
-      <div className="bg-red-300 h-full w-1/2 group hover:rounded-4xl overflow-hidden transition-all relative">
+      <div className="h-full w-full lg:w-1/2 group hover:rounded-4xl overflow-hidden transition-all relative">
         <img className="w-full h-full object-cover" src={image2} alt="img" />
 
         <div className="opacity-0 group-hover:opacity-100 transition w-full h-full absolute top-0 left-0 flex items-center justify-center bg-black/20">

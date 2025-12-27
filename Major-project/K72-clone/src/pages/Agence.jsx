@@ -20,58 +20,58 @@ const Agence = () => {
     "https://k72.ca/images/teamMembers/Isa_640X960.jpg?w=640&h=960&s=5849bb72bb04be156ba2ff4048eb65b8",
   ];
 
-  useGSAP(()=>{
-    gsap.to(imageDivRef.current,{
-      scrollTrigger:{
-        trigger:imageDivRef.current,
+  useGSAP(() => {
+    gsap.to(imageDivRef.current, {
+      scrollTrigger: {
+        trigger: imageDivRef.current,
         // markers:true,
-        start:"top 20%",
-        end:"top -100%",
-        pin:true,
-        pinSpacing:true,
-        pinReparent:true,
-        pintType:'transform',
-        scrub:1,
-        anticipatePin:1,
-        invalidateOnRefresh:true,
-        onUpdate:(e)=>{
+        start: "top 20%",
+        end: "top -100%",
+        pin: true,
+        pinSpacing: true,
+        pinReparent: true,
+        pintType: "transform",
+        scrub: 1,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
+        onUpdate: (e) => {
           let imageIndex;
-          if(e.progress < 1){
-            imageIndex = Math.floor(e.progress * imageArray.length)
-          }else{
-            imageIndex = imageArray.length - 1
+          if (e.progress < 1) {
+            imageIndex = Math.floor(e.progress * imageArray.length);
+          } else {
+            imageIndex = imageArray.length - 1;
           }
-          imgRef.current.src = imageArray[imageIndex]
-        }
-      }
-    })
-  })
+          imgRef.current.src = imageArray[imageIndex];
+        },
+      },
+    });
+  });
 
   return (
     <div>
       <div className="section1 relative py-1">
-        <div
-          ref={imageDivRef}
-          className="absolute -z-1 overflow-hidden rounded-4xl top-60 left-[32.5vw] w-[12vw] h-[17vw]"
-        >
-          <img
-            ref={imgRef}
-            className="w-full h-full object-cover"
-            src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7"
-            alt="img"
-          />
-        </div>
+          <div
+            ref={imageDivRef}
+            className="absolute w-[32vw] h-[40vw] -z-1 overflow-hidden rounded-2xl lg:rounded-4xl top-30 lg:top-60 left-[20vw] lg:left-[32.5vw] lg:w-[12vw] lg:h-[17vw]"
+          >
+            <img
+              ref={imgRef}
+              className="w-full h-full object-cover"
+              src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7"
+              alt="img"
+            />
+          </div>
 
         <div className="font-[font1] relative">
-          <div className="mt-[50vh] text-[19vw] leading-[17.5vw] text-center">
+          <div className="lg:mt-[50vh] mt-[25vh] text-[19vw] leading-[17.5vw] text-center">
             <h1>
               SEVEN7Y <br />
               TWO
             </h1>
           </div>
 
-          <div className="pl-[40%] mt-10">
-            <p className="text-6xl text-left">
+          <div className="lg:pl-[40%] px-4 mt-22 lg:mt-10">
+            <p className="lg:text-6xl text-2xl lg:text-left">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               We’re inquisitive and open-minded, and we make sure creativity
               crowds out ego from every corner. A brand is a living thing, with
@@ -84,7 +84,7 @@ const Agence = () => {
         </div>
       </div>
 
-      <div className="section2 h-screen"></div>
+      {/* <div className="section2 h-screen"></div> */}
     </div>
   );
 };

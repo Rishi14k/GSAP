@@ -88,11 +88,11 @@ const navigate = useNavigate()
     >
       <div className="fixed h-screen w-full">
         <div className="h-full w-full flex top-0">
-          <div className="stairFullNav h-full w-1/4 bg-black"></div>
-          <div className="stairFullNav h-full w-1/4 bg-black"></div>
-          <div className="stairFullNav h-full w-1/4 bg-black"></div>
-          <div className="stairFullNav h-full w-1/4 bg-black"></div>
-          <div className="stairFullNav h-full w-1/4 bg-black"></div>
+          <div className="stairFullNav h-full w-1/4 bg-black/95"></div>
+          <div className="stairFullNav h-full w-1/4 bg-black/95"></div>
+          <div className="stairFullNav h-full w-1/4 bg-black/95"></div>
+          <div className="stairFullNav h-full w-1/4 bg-black/95"></div>
+          <div className="stairFullNav h-full w-1/4 bg-black/95"></div>
         </div>
       </div>
 
@@ -126,9 +126,9 @@ const navigate = useNavigate()
           </div>
         </div>
 
-        <div className=" py-40 ">
+        <div className=" lg:py-40 py-56">
           <div className="link origin-top relative border-y">
-            <h1 className="font-[font2] text-[6vw] leading-[5.2vw] pt-2 uppercase text-center">
+            <h1 className="font-[font2] text-[12vw] lg:text-[6vw] leading-[10vw] lg:leading-[5.2vw] pt-2 uppercase text-center">
              Projects
             </h1>
 
@@ -177,7 +177,7 @@ const navigate = useNavigate()
           </div>
 
           <div className="link origin-top relative border-y">
-            <h1 className="font-[font2] text-[6vw] leading-[5.2vw] pt-2 uppercase text-center">
+            <h1 className="font-[font2] text-[12vw] lg:text-[6vw] leading-[10vw] lg:leading-[5.2vw] pt-2 uppercase text-center">
            Agence
             </h1>
 
@@ -226,7 +226,7 @@ const navigate = useNavigate()
           </div>
 
           <div className="link origin-top relative border-y">
-            <h1 className="font-[font2] text-[6vw] leading-[5.2vw] pt-2 uppercase text-center">
+            <h1 className="font-[font2] text-[12vw] lg:text-[6vw] leading-[10vw] lg:leading-[5.2vw] pt-2 uppercase text-center">
               CONTACT
             </h1>
 
@@ -272,7 +272,7 @@ const navigate = useNavigate()
           </div>
 
           <div className="link origin-top relative border-y">
-            <h1 className="font-[font2] text-[6vw] leading-[5.2vw] pt-2 uppercase text-center">
+            <h1 className="font-[font2] text-[12vw] lg:text-[6vw] leading-[10vw] lg:leading-[5.2vw] pt-2 uppercase text-center">
             BLOG
             </h1>
 

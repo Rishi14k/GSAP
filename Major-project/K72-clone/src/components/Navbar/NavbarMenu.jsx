@@ -13,7 +13,7 @@ const NavbarMenu = () => {
       <div onClick={()=>{
         navigate('/')
       }} className="cursor-pointer">
-        <div className="w-36">
+        <div className="lg:w-36 w-32 px-4">
           <svg
             className="w-full"
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ const NavbarMenu = () => {
           (navGreenRef.current.style.height = "0%"),
             (iconRef.current.style.backGroundColor = "white");
         }}
-        className="relative bg-black h-16 w-[16vw]"
+        className="relative bg-black h-16 w-1/2 lg:w-[16vw]"
       >
         <div
           ref={navGreenRef}
