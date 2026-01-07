@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+.main{
+   display: flex;
+   gap: 10px;
+   position: relative;
+   height: 600px;
+   width: 600px;
+   perspective: 600px;
+   transform: scale(0.9);
+}
+.main img{
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-1{
+    z-index: 3;
+}
+.card-2{
+    z-index: 2;
+    transform: translate(-50%, -70%) scale(0.9);
+    /* opacity: 0.7; */
+}
+.card-3{
+    z-index: 1;
+    transform: translate(-50%, -90%) scale(0.8);
+    /* opacity: 0.5; */
+}
+.main:hover .card-1{
+    transform: translate(-80%,-50%) scale(1) rotateY(-40deg);
+}
+.main:hover .card-2{
+    transform: translate(-60%,-50%) scale(0.9) rotateY(-40deg);
+}
+.main:hover .card-3{
+    transform: translate(-40%,-50%) scale(0.8) rotateY(-40deg);
+}
+.card:hover{
+    margin-top: -50px;
+}
+.main:hover{
+    transform: scale(1);
+}
